@@ -1,0 +1,72 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: wheat;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  transition: 0.4s;
+}
+
+img {
+  object-fit: cover;
+}
+
+img:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+img:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.left-arrow {
+  position: absolute;
+  margin-right: 29rem;
+  cursor: pointer;
+  fill: #fff;
+  opacity: 0.5;
+  z-index: 99999;
+}
+
+.right-arrow {
+  position: absolute;
+  margin-left: 29rem;
+  cursor: pointer;
+  fill: #fff;
+  opacity: 0.5;
+  z-index: 99999;
+}
+
+.left-arrow:hover {
+  opacity: 0.9;
+}
+
+.right-arrow:hover {
+  opacity: 0.9;
+}
